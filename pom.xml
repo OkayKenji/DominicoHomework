@@ -11,15 +11,15 @@
 
 	<name>DomenicoHomework</name>
 	<!-- FIXME change it to the project's website -->
-	<url>http://www.example.com</url>
+	<url>https://github.com/Tibesnoff/DominicoHomework</url>
 
 	<properties>
-
+		<github.global.server>github</github.global.server>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
-
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -30,13 +30,12 @@
 	</dependencies>
 	<distributionManagement>
 		<repository>
-			<id>internal.repo</id>
-			<name>Temporary Staging Repository</name>
-			<url>file://${project.build.directory}/mvn-artifact</url>
+			<id>github</id>
+     		<name>Tibesnoff</name>
+     		<url>https://maven.pkg.github.com/Tibesnoff/DominicoHomework</url>
 		</repository>
 	</distributionManagement>
 	<build>
-
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>
@@ -100,8 +99,5 @@
 			</plugins>
 
 		</pluginManagement>
-
-
 	</build>
-
 </project>
