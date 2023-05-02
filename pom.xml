@@ -27,14 +27,22 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.github.DM766</groupId>
+			<artifactId>TeamProlog</artifactId>
+			<version>bcf102d74b</version>
+		</dependency>
+
 	</dependencies>
 	<distributionManagement>
-		<repository>
-			<id>github</id>
-     		<name>Tibesnoff</name>
-     		<url>https://maven.pkg.github.com/Tibesnoff/DominicoHomework</url>
-		</repository>
+
 	</distributionManagement>
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io/</url>
+		</repository>
+	</repositories>
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
